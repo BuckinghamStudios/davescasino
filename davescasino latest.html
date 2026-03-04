@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave's Casino | High Stakes</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            overflow: hidden; /* Keeps the wall of text contained */
+            position: relative;
+        }
+
+        /* NEW: The Wall of Text Background */
+        .text-wall {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            font-size: 1.5rem;
+            color: rgba(212, 175, 55, 0.15); /* Faint gold color */
+            font-weight: bold;
+            line-height: 1.2;
+            user-select: none;
+            pointer-events: none;
+            white-space: normal;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+            background: rgba(42, 42, 42, 0.95); /* Slight transparency to see the wall behind */
+            border: 2px solid #d4af37;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+            z-index: 1;
+        }
+
+        h1 {
+            color: #d4af37;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #cccccc;
+            margin-bottom: 30px;
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .casino-btn {
+            background-color: #b22222;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .casino-btn:hover {
+            background-color: #d4af37;
+            color: #1a1a1a;
+            transform: scale(1.05);
+        }
+
+        /* Golden Button Style */
+        .gold-btn {
+            background-color: #d4af37;
+            color: #1a1a1a;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+        }
+
+        .gold-btn:hover {
+            background-color: #ffffff;
+            color: #1a1a1a;
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="text-wall">
+        <script>
+            // This script fills the background automatically
+            const text = "⚠ Limited Time Event ";
+            document.write(text.repeat(500)); 
+        </script>
+    </div>
+
+    <div class="container">
+        <h1>Dave's Casino</h1>
+        <p>Start Your Gambling Journey Today!</p>
+
+        <div class="button-grid">
+            <a href="https://davescasino.github.io/blackdave" class="casino-btn">Black Dave</a>
+            <a href="https://davescasino.github.io/horseracing/" class="casino-btn">Horse Racing</a>
+            <a href="https://davescasino.github.io/daves-slot-machine/" class="casino-btn">Dave's Slot Machine</a>
+            
+            <a href="https://davescasino.github.io/daveclicker/" class="casino-btn gold-btn">Limited Time Event</a>
+            
+            <a href="https://davescasino.github.io/davecraft/" class="casino-btn">Davecraft</a>
+            <a href="" class="casino-btn">Coming Soon...</a>
+        </div>
+    </div>
+
+</body>
+</html>
